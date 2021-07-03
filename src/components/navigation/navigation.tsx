@@ -1,0 +1,43 @@
+import './navigation.scss';
+
+import React from 'react';
+import NavigationLink from './navigation-link';
+
+const navigationLinks = [
+    {
+        id: 1,
+        text: 'Home',
+        href: '#home',
+    },
+    {
+        id: 2,
+        text: 'About',
+        href: '#about',
+    },
+    {
+        id: 3,
+        text: 'Portfolio',
+        href: '#portfolio',
+    },
+    {
+        id: 4,
+        text: 'Contact',
+        href: '#contact',
+    },
+];
+
+const Navigation = () => (
+    <nav className="navigation">
+        <ul className="navigation-list">
+            {
+                navigationLinks.map(({ id, text, href }) => (
+                    <li className="navigation-list-item" key={id}>
+                        <NavigationLink text={text} href={href} />
+                    </li>
+                ))
+            }
+        </ul>
+    </nav>
+);
+
+export default Navigation;

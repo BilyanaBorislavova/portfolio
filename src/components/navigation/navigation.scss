@@ -1,0 +1,16 @@
+@import '../../styles/tools/mixins.scss';
+@import '../../styles/settings/variables.scss';
+
+.navigation {
+    @include display-flex-with-centered-items;
+    background-color: $grey-color-800;
+
+    &-list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, minmax(100px, max-content));
+        align-items: center;
+        column-gap: 35px;
+        height: 52px;
+    }
+}
