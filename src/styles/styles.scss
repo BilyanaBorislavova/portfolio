@@ -4,3 +4,10 @@
 
 // Settings
 @import '../styles/settings/typography.scss';
+
+// Elements
+@import '../styles/elements/buttons.scss';
+
+body {
+    min-height: 100vh;
+}
