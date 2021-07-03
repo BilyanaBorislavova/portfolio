@@ -1,0 +1,13 @@
+@import '../../styles/settings/variables.scss';
+
+.navigation-link {
+    color: $white-color;
+    font-size: 21px;
+    transition: color 0.5s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $pink-color-700;
+    }
+}
