@@ -1,0 +1,17 @@
+@import '../../styles/settings/variables.scss';
+@import '../../styles/tools/mixins.scss';
+
+.section-wrapper {
+    @include display-flex-with-centered-items;
+    flex-flow: column;
+    padding: 75px 0;
+
+    &-title {
+        text-transform: uppercase;
+        font-family: 'Raleway-Bold';
+        color: $grey-color-500;
+        font-size: 35px;
+        border-bottom: 5px solid;
+        margin-bottom: 100px;
+    }
+}
