@@ -1,3 +1,5 @@
+import './view-my-work-cta.scss';
+
 import React from 'react';
 
 interface IViewMyWorkCta {

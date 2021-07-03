@@ -1,0 +1,12 @@
+.view-my-work-cta {
+    font-size: 21px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 50px;
+    transition: all 0.5s;
+
+    &:hover {
+        background: #04c2c9;
+        border-color: #04c2c9;
+    }
+}
