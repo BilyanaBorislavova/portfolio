@@ -1,20 +1,22 @@
 @import '../../styles/tools/mixins.scss';
+@import '../../styles/settings/variables.scss';
 
 .header {
     @include display-flex-with-centered-items;
-    background: #252934;
+    flex-flow: column;
+    background: $grey-color-700;
     height: 100vh;
 
     &-title {
         font-size: 47px;
-        color: #fff;
+        color: $white-color;
         margin-bottom: 24px;
         max-width: 720px;
         text-align: center;
 
         &-highlighted {
             font-family: 'Raleway-SemiBold';
-            color: #e31b6d;
+            color: $pink-color-700;
         }
     }
 }
