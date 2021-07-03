@@ -4,6 +4,7 @@
 .navigation {
     @include display-flex-with-centered-items;
     background-color: $grey-color-800;
+    border-bottom: 3px solid $blue-color-300;
 
     &-list {
         display: grid;
