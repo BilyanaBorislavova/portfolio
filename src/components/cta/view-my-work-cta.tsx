@@ -10,6 +10,7 @@ interface IViewMyWorkCta {
 const ViewMyWorkCta = ({ onClick, text }: IViewMyWorkCta) => (
     <button className="view-my-work-cta" onClick={onClick}>
         {text}
+        <i className="view-my-work-cta-arrow" />
     </button>
 );
 

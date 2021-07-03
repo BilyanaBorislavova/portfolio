@@ -1,12 +1,30 @@
+@import '../../styles/tools/mixins.scss';
+
 .view-my-work-cta {
+    @include display-flex-with-centered-items;
+    flex-flow: row;
     font-size: 21px;
     color: #fff;
     border: 2px solid #fff;
     padding: 12px 50px;
     transition: all 0.5s;
 
+    &-arrow {
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3.5px;
+        transform: rotate(-45deg);
+        transition: transform 0.5s;
+        margin-left: 12px;
+    }
+
     &:hover {
         background: #04c2c9;
         border-color: #04c2c9;
+
+        .view-my-work-cta-arrow {
+            transform: rotate(45deg);
+        }
     }
 }
