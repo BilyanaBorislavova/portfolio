@@ -1,6 +1,8 @@
+@import '../../styles/tools/mixins.scss';
 @import '../../styles/settings/variables.scss';
 
 .hexagon-with-content {
+    @include display-flex-with-centered-items;
     position: relative;
     width: 104px;
     height: 60px;
