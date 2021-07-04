@@ -1,12 +1,14 @@
+import './about.scss';
+
 import React from 'react';
 import SectionWrapper from '../common/section-wrapper';
-import HexagonWithContent from '../hexagon-with-content/hexagon-with-content';
+import HexagonWithContentAndText from '../hexagon/hexagon-with-content-and-text';
 
 const About = () => (
-    <SectionWrapper id="about" title="About">
-        <HexagonWithContent>
+    <SectionWrapper className="about" id="about" title="About">
+        <HexagonWithContentAndText title="Fast" text="Fast load times and lag free interaction, my highest priority.">
             asd
-        </HexagonWithContent>
+        </HexagonWithContentAndText>
     </SectionWrapper>
 );
 

@@ -1,0 +1,10 @@
+@import '../../styles/settings/variables.scss';
+
+.about {
+    .hexagon-with-content-and-text-container {
+        &-title,
+        &-text {
+            color: $grey-color-400;
+        }
+    }
+}
