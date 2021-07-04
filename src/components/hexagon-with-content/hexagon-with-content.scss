@@ -1,0 +1,29 @@
+@import '../../styles/settings/variables.scss';
+
+.hexagon-with-content {
+    position: relative;
+    width: 104px;
+    height: 60px;
+    background-color: $blue-color-400;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 0;
+        top: -30px;
+        border-bottom: 30px solid $blue-color-400;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        bottom: -30px;
+        left: 0;
+        border-top: 30px solid $blue-color-400;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+}
