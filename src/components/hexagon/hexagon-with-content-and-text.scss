@@ -1,0 +1,27 @@
+.hexagon-with-content-and-text {
+    display: grid;
+    row-gap: 45px;
+    max-width: 300px;
+    text-align: center;
+
+    &-content {
+        justify-self: center;
+    }
+
+    &-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+
+        &-title {
+            font-family: 'Raleway-Bold';
+            font-size: 27px;
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: 18px;
+        }
+    }
+}
