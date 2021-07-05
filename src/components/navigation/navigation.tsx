@@ -35,7 +35,7 @@ const Navigation = () => (
             {
                 navigationLinks.map(({ id, text, href }) => (
                     <li className="navigation-list-item" key={id}>
-                        <NavigationLink text={text} href={href} />
+                        <NavigationLink text={text} href={href} props={{ smooth: true }}/>
                     </li>
                 ))
             }
