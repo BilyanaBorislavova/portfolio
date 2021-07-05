@@ -3,6 +3,7 @@
 .navigation-link {
     color: $white-color;
     font-size: 21px;
+    cursor: pointer;
     transition: color 0.5s;
 
     &:hover,
