@@ -2,27 +2,30 @@ import './navigation.scss';
 
 import React from 'react';
 import NavigationLink from './navigation-link';
+import { ROUTE_IDs } from '../../constants/constants'; 
+
+const { HEADER, ABOUT, PORTFOLIO, CONTACT } = ROUTE_IDs;
 
 const navigationLinks = [
     {
         id: 1,
         text: 'Home',
-        href: '#home',
+        href: HEADER,
     },
     {
         id: 2,
         text: 'About',
-        href: '#about',
+        href: ABOUT,
     },
     {
         id: 3,
         text: 'Portfolio',
-        href: '#portfolio',
+        href: PORTFOLIO,
     },
     {
         id: 4,
         text: 'Contact',
-        href: '#contact',
+        href: CONTACT,
     },
 ];
 
