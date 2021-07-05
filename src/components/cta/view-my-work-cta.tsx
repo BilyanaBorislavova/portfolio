@@ -1,17 +1,18 @@
 import './view-my-work-cta.scss';
 
 import React from 'react';
+import ScrollableLink from '../common/scrollable-link';
 
 interface IViewMyWorkCta {
-    onClick: () => void,
+    href: string,
     text: string
 }
 
-const ViewMyWorkCta = ({ onClick, text }: IViewMyWorkCta) => (
-    <button className="view-my-work-cta" onClick={onClick}>
+const ViewMyWorkCta = ({ href, text }: IViewMyWorkCta) => (
+    <ScrollableLink className="view-my-work-cta" href={href} props={{ smooth: true }}>
         {text}
         <i className="view-my-work-cta-arrow" />
-    </button>
+    </ScrollableLink>
 );
 
 export default ViewMyWorkCta;
