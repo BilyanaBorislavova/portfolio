@@ -1,15 +1,16 @@
-import './about.scss';
+import "./about.scss";
 
-import React from 'react';
-import SectionWrapper from '../common/section-wrapper';
-import HexagonWithContentAndText from '../hexagon/hexagon-with-content-and-text';
+import React from "react";
+import SectionWrapper from "../common/section-wrapper";
+import WhyHireMe from "../why-hire-me/why-hire-me";
+import { ROUTE_IDs } from "../../constants/constants";
+
+const { ABOUT } = ROUTE_IDs;
 
 const About = () => (
-    <SectionWrapper className="about" id="about" title="About">
-        <HexagonWithContentAndText title="Fast" text="Fast load times and lag free interaction, my highest priority.">
-            asd
-        </HexagonWithContentAndText>
-    </SectionWrapper>
+  <SectionWrapper className="about" id={ABOUT} title="About">
+      <WhyHireMe />
+  </SectionWrapper>
 );
 
 export default About;
