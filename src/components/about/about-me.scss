@@ -1,0 +1,23 @@
+@import '../../styles/settings/variables.scss';
+
+.about-me {
+    display: grid;
+    row-gap: 25px;
+
+    &-image {
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+    }
+
+    &-title,
+    &-description {
+        text-align: center;
+        color: $grey-color-400;
+    }
+
+    &-title {
+        font-size: 27px;
+        font-family: 'Raleway-Bold';
+    }
+}
