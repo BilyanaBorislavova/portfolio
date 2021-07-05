@@ -1,17 +1,18 @@
-import './navigation-link.scss';
+import "./navigation-link.scss";
 
-import React from 'react';
-import { Link } from 'react-scroll';
+import React from "react";
+import { Link } from "react-scroll";
 
 interface INavigationLink {
-    text: string,
-    href: string,
+  text: string;
+  href: string;
+  props: {},
 }
 
-const NavigationLink = ({ text, href }: INavigationLink) => (
-    <Link className="navigation-link" to={href} spy={true} smooth={true} duration={500}>
-        {text}
-    </Link>
+const NavigationLink = ({ text, href, props }: INavigationLink) => (
+  <Link className="navigation-link" to={href} {...props}>
+    {text}
+  </Link>
 );
 
 export default NavigationLink;
