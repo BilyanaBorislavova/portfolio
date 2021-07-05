@@ -1,6 +1,7 @@
 import './navigation-link.scss';
 
 import React from 'react';
+import { Link } from 'react-scroll';
 
 interface INavigationLink {
     text: string,
@@ -8,9 +9,9 @@ interface INavigationLink {
 }
 
 const NavigationLink = ({ text, href }: INavigationLink) => (
-    <a className="navigation-link" href={href}>
+    <Link className="navigation-link" to={href} spy={true} smooth={true} duration={500}>
         {text}
-    </a>
+    </Link>
 );
 
 export default NavigationLink;
