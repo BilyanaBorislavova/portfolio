@@ -1,6 +1,16 @@
 @import '../../styles/settings/variables.scss';
 
 .about {
+    &-me-and-my-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 75px;
+
+        .about-me {
+            max-width: 350px;
+        }
+    }
+
     .hexagon-with-content-and-text-container {
         &-title,
         &-text {
