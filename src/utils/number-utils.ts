@@ -1,7 +1,7 @@
 const increaseNumberGradually = (
     startNumber: number,
     numberToIncrementWith: number,
-    setStartNumber: (num: number) => {},
+    setStartNumber: any,
     timeoutInMs: number,
     maxNumberToIncrementTo: number
 ) => {
