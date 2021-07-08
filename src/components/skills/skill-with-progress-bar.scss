@@ -1,0 +1,17 @@
+@import '../../styles/settings/variables.scss';
+
+.skill-with-progress-bar {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    &-text {
+        background: $blue-color-300;
+        color: $white-color;
+        font-family: 'Raleway-Bold';
+        padding: 10px 20px;
+    }
+
+    .rc-progress-line {
+        height: 100%;
+    }
+};
