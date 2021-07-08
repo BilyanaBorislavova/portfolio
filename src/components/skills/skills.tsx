@@ -1,14 +1,15 @@
 import React from "react";
-import Skill from "./skill";
+import SkillWithProgressBar from "./skill-with-progress-bar";
 
 const Skills = () => (
   <section className="skills">
-    <Skill
+    <SkillWithProgressBar
       skillText="JavaScript"
       percentageOfKnowledge={70}
       props={{
-          strokeWidth: 7,
-          trailWidth: 7
+          strokeWidth: 10.1,
+          trailWidth: 10.1,
+          strokeLinecap: ''
     }}
     />
   </section>
