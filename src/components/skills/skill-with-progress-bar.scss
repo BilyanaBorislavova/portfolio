@@ -1,3 +1,4 @@
+@import '../../styles/tools/mixins.scss';
 @import '../../styles/settings/variables.scss';
 
 .skill-with-progress-bar {
@@ -5,6 +6,7 @@
     grid-template-columns: max-content 1fr;
 
     &-text {
+        @include display-flex-with-centered-items;
         background: $blue-color-300;
         color: $white-color;
         font-family: 'Raleway-Bold';
