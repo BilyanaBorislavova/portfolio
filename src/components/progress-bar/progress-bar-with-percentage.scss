@@ -1,0 +1,11 @@
+@import '../../styles/settings/variables.scss';
+
+.progress-bar-with-percentage {
+    position: relative;
+
+    &-as-text {
+        position: absolute;
+        transform: translate(50%, 85%);
+        right: 0;
+    }
+}
