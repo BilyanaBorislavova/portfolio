@@ -1,14 +1,20 @@
+@import '../../styles/tools/breakpoints.scss';
 @import '../../styles/settings/variables.scss';
 
 .about {
     &-me-and-my-skills {
         display: grid;
-        grid-template-columns: repeat(2, max-content);
-        column-gap: 45px;
-        margin-top: 75px;
+        row-gap: 25px;
 
         .about-me {
             max-width: 350px;
+            justify-self: center;
+        }
+
+        @include for-tablet-landscape-up {
+            grid-template-columns: repeat(2, max-content);
+            column-gap: 45px;
+            margin-top: 75px;
         }
     }
 
