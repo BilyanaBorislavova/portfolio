@@ -2,14 +2,14 @@ import './styles/styles.scss';
 
 import React from 'react';
 import Header from './components/header/header';
-import Navigation from './components/navigation/navigation';
+import StickyNavigation from './components/navigation/sticky-navigation';
 import About from './components/about/about';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Navigation />
+      <StickyNavigation />
       <About />
     </div>
   );
