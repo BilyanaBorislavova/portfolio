@@ -1,3 +1,5 @@
+import './skills.scss';
+
 import React from "react";
 import SkillWithProgressBar from "./skill-with-progress-bar";
 
