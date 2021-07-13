@@ -4,6 +4,7 @@
 .skill-with-progress-bar {
     display: grid;
     grid-template-columns: max-content 1fr;
+    max-height: 35px;
 
     &-text {
         @include display-flex-with-centered-items;
@@ -11,9 +12,12 @@
         color: $white-color;
         font-family: 'Raleway-Bold';
         padding: 10px 20px;
+        height: 15px;
     }
 
     .rc-progress-line {
         height: 100%;
+        width: 100%;
+        max-height: 35px;
     }
 };
