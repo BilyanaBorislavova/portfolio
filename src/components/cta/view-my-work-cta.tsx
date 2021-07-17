@@ -9,7 +9,7 @@ interface IViewMyWorkCta {
 }
 
 const ViewMyWorkCta = ({ href, text }: IViewMyWorkCta) => (
-    <ScrollableLink className="view-my-work-cta" href={href} props={{ smooth: true }}>
+    <ScrollableLink className="btn btn-primary view-my-work-cta" href={href} props={{ smooth: true }}>
         {text}
         <i className="view-my-work-cta-arrow" />
     </ScrollableLink>

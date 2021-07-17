@@ -2,15 +2,6 @@
 @import '../../styles/settings/variables.scss';
 
 .view-my-work-cta {
-    @include display-flex-with-centered-items;
-    flex-flow: row;
-    font-size: 21px;
-    color: $white-color;
-    border: 2px solid $white-color;
-    padding: 12px 50px;
-    transition: all 0.5s;
-    cursor: pointer;
-
     &-arrow {
         border: solid $white-color;
         border-width: 0 3px 3px 0;
@@ -22,9 +13,6 @@
     }
 
     &:hover {
-        background: $blue-color-300;
-        border-color: $blue-color-300;
-
         .view-my-work-cta-arrow {
             transform: rotate(45deg);
         }
