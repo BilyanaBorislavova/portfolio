@@ -1,5 +1,37 @@
+@import '../settings/variables.scss';
+@import '../tools/mixins.scss';
+
 button {
     border: none;
     background: unset;
     cursor: pointer;
+}
+
+.btn {
+    @include display-flex-with-centered-items;
+    flex-flow: row;
+    font-size: 21px;
+    border: 2px solid;
+    padding: 12px 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &-primary {
+        color: $white-color;
+        border-color: $white-color;
+
+        &:hover {
+            background: $blue-color-300;
+            border-color: $blue-color-300;
+        }
+    }
+
+    &-secondary {
+        color: $grey-color-700;
+        border-color: $pink-color-700;
+
+        &:hover {
+            background: $pink-color-700;
+        }
+    }
 }
