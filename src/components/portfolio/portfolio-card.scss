@@ -1,0 +1,29 @@
+@import '../../styles/tools/mixins.scss';
+
+.portfolio-card {
+    width: 390px;
+    height: 300px;
+    position: relative;
+    transition: all 0.5s;
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    &-content {
+        position: absolute;
+        display: none;
+    }
+
+    &:hover {
+        .portfolio-card-content {
+            @include display-flex-with-centered-items;
+        }
+
+        .portfolio-card-img {
+            display: none;
+        }
+    }
+}
